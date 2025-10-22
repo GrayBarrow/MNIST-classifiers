@@ -18,9 +18,4 @@ def split_dataset(ds_path, train_ratio=0.8):
     return X_train, X_test, y_train, y_test
 
 def load_mnist(ds_path='mnist_dataset.npz'):
-    """
-
-    :param ds_path:
-    :return:
-    """
     return split_dataset(ds_path)

@@ -6,8 +6,7 @@ from visualization import plot_training_curves, plot_confusion_matrix
 
 
 def train_and_evaluate_linear_nn(X_train_raw, X_test_raw, y_train_raw, y_test_raw):
-    X_train, X_test, y_train_onehot, y_test_onehot, y_train, y_test = preprocess_for_nn(X_train_raw, X_test_raw,
-                                                                                        y_train_raw, y_test_raw)
+    X_train, X_test, y_train_onehot, y_test_onehot, y_train, y_test = preprocess_for_nn(X_train_raw, X_test_raw, y_train_raw, y_test_raw)
 
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     print(f'Using {device} device')
